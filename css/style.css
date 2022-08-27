@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(16, 137, 177);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+
+}
+
+.container{
+    position: relative;
+    margin: 50px;
+    background: #fff;
+    width: 100%;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+
+}
+
+.left-side{
+    position: relative;
+    background: #5e6a70;
+    padding: 40px;
+
+}
+
+.right-side{
+    background: #fff;
+    position: relative;
+    padding: 40px;
+}
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.imgBx img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+
+
+}
+
+.profile-text h2{
+    color: #fff;
+    font-size: 1.2em;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.profile-text h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.title{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    
+}
+
+.contact-info{
+    position: relative;
+
+}
+
+.contact-info ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contact-info .icon{
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contact-info span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-info.education{
+    margin-bottom: 15px;
+
+}
+.contact-info.education h5{
+    color: #03a9f4;
+    font-family: 500;
+}
+.contact-info.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.contact-info.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+
+.percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display:block;
+    margin: 5px;
+}
+.percent div{
+    position:absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    background: #03a9f4;
+
+}
+.right-side{
+    background: #fff;
+    position: relative;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about.p{
+    color: #333;
+
+}
+.box{
+    display: flex;
+    flex-direction: none;
+    margin: 20px 0;
+}
+.year-collage{
+    min-width: 150px;
+}
+.year-collage h5{
+    text-transform: uppercase;
+    color: #022a41e7;
+    font-weight: 600;
+}
+.text2 h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #2ad7da;
+}
+.skill.box{
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: 150px, 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.box h4{
+  text-transform: uppercase;
+  color: #1761da;
+}
+.percent2{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.percent2 div{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #03a9f4;
+}
+.about.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.about.interest ul li{
+    list-style: none;
+    color:#333;
+    font-weight: 500;
+    margin:10px 0px; 
+
+}
+.about.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 19px;
+    width: 20px;
+    margin-right: 2px;
+}
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about.interest ul{
+        
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:600px){
+    .box{
+      
+        flex-direction: column;
+    }
+    .skill.box{
+        grid-template-columns: repeat(1.1fr);
+    }
+    .about.interest ul{
+        
+        grid-template-columns: repeat(1,1fr);
+      } 
+    
+}
